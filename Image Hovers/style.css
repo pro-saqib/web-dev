@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/* zoom out from center */
+
+.zoom-out-from-center{
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+    border: 2px solid black;
+    margin: 30px auto;
+    position: relative;
+}
+.zoom-out-from-center .content{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    transform: scale(0);
+    transform-origin: center;
+    transition: .3s ease-in;
+}
+.zoom-out-from-center:hover .content{
+    transform: scale(1);
+}
+.zoom-out-from-center .content p{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+/* slide from left */
+
+.slide-from-left{
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+    border: 2px solid black;
+    margin: 30px auto;
+    position: relative;
+}
+.slide-from-left .content{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .3s ease-in;
+}
+.slide-from-left:hover .content{
+    transform: scaleX(1);
+}
+.slide-from-left .content p{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+/* slide from right */
+
+.slide-from-right{
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+    border: 2px solid black;
+    margin: 30px auto;
+    position: relative;
+}
+.slide-from-right .content{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .3s ease-in;
+}
+.slide-from-right:hover .content{
+    transform: scaleX(1);
+}
+.slide-from-right .content p{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+/* slide down */
+
+.slide-down{
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+    border: 2px solid black;
+    margin: 30px auto;
+    position: relative;
+}
+.slide-down .content{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .3s ease-in;
+}
+.slide-down:hover .content{
+    transform: scaleY(1);
+}
+.slide-down .content p{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+/* slide up */
+
+.slide-up{
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+    border: 2px solid black;
+    margin: 30px auto;
+    position: relative;
+}
+.slide-up .content{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: .3s ease-in;
+}
+.slide-up:hover .content{
+    transform: scaleY(1);
+}
+.slide-up .content p{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+/* rotate from center */
+
+.rotate-from-center{
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+    border: 2px solid black;
+    margin: 30px auto;
+    position: relative;
+}
+.rotate-from-center .content{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    transform: rotateZ(360deg) scale(0);
+    transform-origin: center;
+    transition: .3s ease-in;
+}
+.rotate-from-center:hover .content{
+    transform: rotateZ(0deg) scale(1);
+}
+.rotate-from-center .content p{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+/* rotate from top */
+
+.rotate-from-top{
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+    border: 2px solid black;
+    margin: 30px auto;
+    position: relative;
+}
+.rotate-from-top .content{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    transform: rotateZ(180deg) scale(0);
+    transform-origin: top;
+    transition: .3s ease-in;
+}
+.rotate-from-top:hover .content{
+    transform: rotateZ(0deg) scale(1);
+}
+.rotate-from-top .content p{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+/* rotate from bottom */
+
+.rotate-from-bottom{
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+    border: 2px solid black;
+    margin: 30px auto;
+    position: relative;
+}
+.rotate-from-bottom .content{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    transform: rotateZ(180deg) scale(0);
+    transform-origin: bottom;
+    transition: .3s ease-in;
+}
+.rotate-from-bottom:hover .content{
+    transform: rotateZ(0deg) scale(1);
+}
+.rotate-from-bottom .content p{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+/* rotate from left */
+
+.rotate-from-left{
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+    border: 2px solid black;
+    margin: 30px auto;
+    position: relative;
+}
+.rotate-from-left .content{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    transform: rotateZ(180deg) scale(0);
+    transform-origin: left;
+    transition: .3s ease-in;
+}
+.rotate-from-left:hover .content{
+    transform: rotateZ(0deg) scale(1);
+}
+.rotate-from-left .content p{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+/* rotate from right */
+
+.rotate-from-right{
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+    border: 2px solid black;
+    margin: 30px auto;
+    position: relative;
+}
+.rotate-from-right .content{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    transform: rotateZ(180deg) scale(0);
+    transform-origin: right;
+    transition: .3s ease-in;
+}
+.rotate-from-right:hover .content{
+    transform: rotateZ(0deg) scale(1);
+}
+.rotate-from-right .content p{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+/* ----- */
+
+.content button{
+    height: 30px;
+    width: 70px;
+    background: none;
+    outline: none;
+    color: white;
+    border: 2px solid white;
+    font-size: 15px;
+    transform: translateY(15px);
+    transition: .3s ease;
+    cursor: pointer;
+}
+.content button:hover{
+    background: crimson;
+    color: white;
+    border-color: white;
+    font-weight: bolder;
+}
