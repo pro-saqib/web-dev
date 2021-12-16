@@ -56,6 +56,6 @@ input:invalid{
     cursor: pointer;
 }
 .button:hover{
-    background: crimson;
+    background: tomato;
     color: whitesmoke;
 }
